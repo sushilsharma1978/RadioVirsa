@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="100"
+    android:orientation="vertical"
+    android:gravity="bottom"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_weight="35"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="130dp"
+            android:layout_marginTop="8dp"
+            android:layout_height="130dp"
+            android:layout_gravity="center"
+            android:background="@drawable/logo"
+            android:scaleType="fitXY"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_weight="25"
+        android:orientation="vertical">
+        <!--<ImageView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:layout_marginRight="10dp"-->
+            <!--android:scaleType="fitXY"-->
+            <!--android:layout_height="230dp"-->
+            <!--android:id="@+id/iv_live"-->
+            <!--android:background="@drawable/livebutton"-->
+            <!--/>-->
+        <!--<TextView-->
+            <!--android:id="@+id/live_video"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Live"-->
+            <!--android:textColor="#000"-->
+            <!--android:textSize="18dp"/>-->
+        <!--<View-->
+            <!--android:layout_width="38dp"-->
+            <!--android:background="#000"-->
+            <!--android:layout_height="2dp"/>-->
+
+        <LinearLayout
+            android:id="@+id/live_radio"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/main_background"
+            android:weightSum="1"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.20"
+                android:gravity="center"
+                android:layout_height="65dp">
+            <ImageView
+                android:layout_width="40dp"
+                android:background="@drawable/radioantenna"
+                android:layout_height="40dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.6"
+                android:gravity="center"
+                android:layout_height="65dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:text="Live Radio"
+                    android:textSize="21dp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.20"
+                android:gravity="center"
+                android:layout_height="65dp">
+            <ImageView
+                android:layout_width="35dp"
+                android:background="@drawable/arrowright"
+                android:layout_height="35dp" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/live_video"
+            android:layout_marginTop="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="40dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/main_background">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.20"
+                android:gravity="center"
+                android:layout_height="65dp">
+                <ImageView
+                    android:layout_width="42dp"
+                    android:background="@drawable/livevideo"
+                    android:layout_height="43dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.6"
+                android:gravity="center"
+                android:layout_height="65dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:text="Live Video Streaming"
+                    android:textSize="21dp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.20"
+                android:gravity="center"
+                android:layout_height="65dp">
+                <ImageView
+                    android:layout_width="35dp"
+                    android:background="@drawable/arrowright"
+                    android:layout_height="35dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="41"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:weightSum="4"
+             android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="wrap_content">
+   <LinearLayout
+    android:layout_width="wrap_content"
+    android:orientation="vertical"
+       android:gravity="center"
+    android:layout_weight="1"
+       android:id="@+id/linear_youtube"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="40dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/youtube"
+        android:layout_height="40dp" />
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Youtube"
+           />
+
+</LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:id="@+id/linear_facebook"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="40dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/facebook"
+                    android:layout_height="40dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Facebook" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:id="@+id/linear_website"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="40dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/www"
+                    android:layout_height="40dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Website"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:id="@+id/linear_contact_us"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="40dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/contact"
+                    android:layout_height="40dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Contact Us" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_marginBottom="5dp"
+           android:gravity="center"
+           android:paddingLeft="10dp"
+           android:paddingRight="10dp"
+           android:text="Copyright @Radio Virsa NZ"
+           android:layout_height="wrap_content" />
+
+</LinearLayout>

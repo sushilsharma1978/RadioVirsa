@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    android:background="@drawable/background"
+    android:weightSum="2"
+    tools:context=".ActivityStream">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorBlue">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/iv_back_arrow"
+            android:src="@drawable/back_arrow" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:gravity="center"
+            android:text="Live Radio"
+            android:textStyle="bold"
+            android:textColor="@color/colorWhite" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_marginTop="20dp"
+    android:layout_weight="0.2"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/logo"
+        android:scaleType="fitXY"
+
+        />
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1.8"
+        android:gravity="center|top"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="250dp"
+            android:background="@color/colorBlue"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_height="190dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_marginTop="40dp"
+            android:background="@color/colorBlue"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <!--<ImageButton-->
+                <!--android:layout_width="120dp"-->
+                <!--android:layout_height="120dp"-->
+                <!--android:src="@drawable/ic_play_white"-->
+                <!--android:id="@+id/btn_play"-->
+                <!--android:background="@null"-->
+                <!--android:scaleType="fitXY"-->
+                <!--/>-->
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/play"
+                android:id="@+id/iv_play2"
+                android:scaleType="fitXY"
+                />
+            <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/pause_"
+            android:id="@+id/iv_pause2"
+            android:scaleType="fitXY"
+                android:visibility="gone"
+            />
+
+        </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="250dp"
+            android:background="@color/colorBlue"
+            android:layout_height="55dp">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:visibility="gone"
+                android:id="@+id/iv_gif"/>
+        </LinearLayout>
+        <SeekBar
+            android:layout_width="280dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/seekbar"
+
+            android:progressTint="@color/colorBlue"
+            android:thumb="@drawable/custum_thumb"
+            android:minHeight="10dp"
+            android:maxHeight="10dp"
+            android:layout_height="wrap_content"/>
+        <!--android:progressDrawable="@drawable/seekbar_progress"-->
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
